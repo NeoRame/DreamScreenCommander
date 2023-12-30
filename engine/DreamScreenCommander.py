@@ -165,7 +165,7 @@ if options.ip:
                 int(payload[i])
             setIP(options.ip)
         else:
-            print "There is an error in your IP's length"
+            print("There is an error in your IP's length")
 
 if options.group:
     try:
@@ -176,7 +176,7 @@ if options.group:
                 options.group = 0
         setGroup(options.group)
     except:
-        print "error: group not a valid number"
+        print("error: group not a valid number")
         sys.exit(0)
 
 if options.mode:
@@ -189,7 +189,7 @@ if options.mode:
             options.mode = 0
         setMode(options.mode)
     except:
-        print "error: mode not a valid number"
+        print("error: mode not a valid number")
         sys.exit(0)
 
 if options.color:
@@ -197,7 +197,7 @@ if options.color:
         options.color
         setColor(options.color)
     except:
-        print "There was an error, please make sure you are using the right format: '255 255 255' for white"
+        print("There was an error, please make sure you are using the right format: '255 255 255' for white")
 
 if options.source:
     try:
@@ -208,7 +208,7 @@ if options.source:
                 options.source = 0
         setSource(options.source)
     except:
-        print "error: source not a valid number"
+        print("error: source not a valid number")
         sys.exit(0)
 
 if options.scene:
@@ -220,7 +220,7 @@ if options.scene:
                 options.scene = 0
         setScene(options.scene)
     except:
-        print "error: scene not a valid number"
+        print("error: scene not a valid number")
         sys.exit(0)
 
 if options.brightness:
@@ -232,9 +232,9 @@ if options.brightness:
                 options.brightness = 0
         setBrightness(options.brightness)
     except:
-        print "error: brightness not a valid number"
+        print("error: brightness not a valid number")
         sys.exit(0)
 
 if (options.ip is None) and (options.group is None) and (options.mode is None) and (options.color is None) and (options.source is None) and (options.scene is None) and (options.brightness is None):
-    print "error: no options were selected"
+    print("error: no options were selected")
     sys.exit(0)
